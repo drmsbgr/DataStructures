@@ -2,15 +2,10 @@ using System.Collections;
 
 namespace DataStructuresLib.LinkedList.SinglyLinkedList
 {
-    public class SinglyLinkedListEnumerator<T> : IEnumerator<T>
+    public class SinglyLinkedListEnumerator<T>(SinglyLinkedListNode<T> head) : IEnumerator<T>
     {
-        private SinglyLinkedListNode<T> Head;
+        private SinglyLinkedListNode<T> Head = head;
         private SinglyLinkedListNode<T> _current;
-
-        public SinglyLinkedListEnumerator(SinglyLinkedListNode<T> head)
-        {
-            Head = head;
-        }
 
         public T Current => _current.Value;
 
