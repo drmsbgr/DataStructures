@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataStructuresLib\DataStructuresLib.csproj" />
+    <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

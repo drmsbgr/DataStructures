@@ -93,7 +93,7 @@ namespace DataStructuresLib.LinkedList.SinglyLinkedList
                 current = current.Next;
             } while (current.Next != null);
 
-            throw new Exception();
+            throw new ArgumentException("Silinecek değer listede yok");
         }
 
         public T RemoveLast()
